@@ -1,0 +1,199 @@
+/* Page Background */
+.Aboutme {
+  width: 100%;
+  padding: 40px 80px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  backdrop-filter: blur(10px);
+}
+
+/* Section Title */
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.main-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+/* Wrapper */
+.info-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Glassmorphism Card */
+.card {
+  flex: 1;
+  min-width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 40px rgba(0, 140, 255, 0.4);
+}
+
+/* Titles inside cards */
+.card-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+/* Info List */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.info-icon {
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.8);
+  transition: 0.3s;
+}
+
+.info-item:hover .info-icon {
+  transform: scale(1.15);
+}
+
+/* Text inside info section */
+.info-label {
+  font-size: 15px;
+  color: #e5e5e5;
+}
+
+.info-value {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info-value:hover {
+  color: #7dd3fc;
+  text-shadow: 0 0 8px rgba(125, 211, 252, 0.8);
+}
+
+/* Languages */
+.lang-item {
+  margin-bottom: 12px;
+}
+
+.lang-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.lang-type {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Social Links */
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-item {
+  display: flex;
+  gap: 15px;
+}
+
+.social-title {
+  font-size: 18px;
+  color: white;
+}
+
+.social-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #7dd3fc;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: #a5f3fc;
+  text-shadow: 0 0 10px rgba(165, 243, 252, 0.9);
+}
+
+.social-desc {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Final CTA Box (special glow) */
+.final-card {
+  text-align: center;
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/* Final CTA Title */
+.final-title {
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
+
+/* Final CTA Description */
+.final-desc {
+  color: #e2e8f0;
+  margin-bottom: 20px;
+}
+
+/* Send Message Button with Glass Effect */
+.final-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(56, 189, 248, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.final-button:hover {
+  background: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 1);
+  transform: translateY(-3px);
+}

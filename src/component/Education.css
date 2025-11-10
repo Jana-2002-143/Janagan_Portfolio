@@ -1,0 +1,90 @@
+.Education {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 60px;
+  background: #f5f7fa;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Title section */
+.educationtitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.myeducation {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.edusummary {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Grid layout for all education cards */
+.alleducation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Individual card */
+.course {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.course:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+/* Top section inside card */
+.design {
+  margin-bottom: 10px;
+}
+
+.coursename {
+  margin: 0;
+  font-size: 18px;
+}
+
+.coursecategory {
+  font-size: 14px;
+  color: #3b3bff;
+  background: #eef2ff;
+  padding: 5px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* Institute name */
+.institute {
+  margin: 12px 0;
+  color: #333;
+}
+
+/* Year + Percentage flex layout */
+.yearofcourse {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.courseduration {
+  font-size: 14px;
+  color: #555;
+}
+
+.percentageofcourse {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}

@@ -1,0 +1,93 @@
+/* Wrapper */
+.Heading {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Name */
+.myname {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+/* Job Title */
+.Heading h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Summary */
+.summary {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px auto 25px auto;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* Address Section */
+.myaddress {
+  margin-bottom: 20px;
+}
+
+.myaddress p,
+.myaddress a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #333;
+  margin: 6px 0;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Links Section */
+.mywebsites {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Social Buttons */
+.mywebsites a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s ease;
+}
+
+/* Button Colors */
+.github {
+  background-color: #222;
+}
+
+.linkedin {
+  background-color: #0A66C2;
+}
+
+.contact {
+  background-color: #c0392b;
+}
+
+/* Hover */
+.mywebsites a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Icons */
+.iconsize {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f8f9fa;
+}
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
