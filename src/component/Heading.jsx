@@ -2,7 +2,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
-import './heading.css'
+import './Heading.css'
 
 function Heading() {
   return (
