@@ -1,11 +1,9 @@
-/* =====================
-   ABOUT ME SECTION
-===================== */
 
 .Aboutme {
   padding: 50px 20px;
   background: #ffffff;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
 body.dark .Aboutme {

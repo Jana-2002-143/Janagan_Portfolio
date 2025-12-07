@@ -1,12 +1,11 @@
-/* ===============================
-   Technical Section – Light Mode
-=================================*/
+
 .Technical {
-  width: 100%;
+  width: 90%;
   padding: 40px 20px;
   background: #ffffff;
   transition: 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
 body.dark .Technical {

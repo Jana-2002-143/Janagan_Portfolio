@@ -1,12 +1,11 @@
-/* ===========================
-   PROJECT SECTION 
-=========================== */
+
 .Projects {
-  width: 100%;
+  width: 90%;
   padding: 50px 20px;
   background: #ffffff;
   transition: 0.3s;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
 body.dark .Projects {
