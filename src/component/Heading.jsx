@@ -2,7 +2,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
-import './Heading.css'
+import "./Heading.css";
 
 function Heading() {
   return (
@@ -10,9 +10,13 @@ function Heading() {
       <h1 className="myname">JANAGAN L</h1>
       <h2>Java Full-Stack Developer</h2>
       <p className="summary">
-        Enthusiastic developer with hands-on experience in building responsive
-        web applications. Passionate about creating innovative solutions using
-        modern technologies.
+        I am a passionate full-stack developer specializing in React, Spring
+        Boot, and REST API development. I enjoy building clean, user-friendly
+        interfaces and robust backend systems. My projects focus on real-world
+        functionality such as authentication, e-commerce workflows, secure
+        payment handling, and efficient data management. I continuously improve
+        my skills through hands-on development and problem-solving, and I enjoy
+        turning ideas into complete, polished applications.
       </p>
       <div className="myaddress">
         <p>
