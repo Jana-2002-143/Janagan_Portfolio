@@ -1,4 +1,4 @@
-import './component/CSS/Technical.css';
+import '../CSS/Technical.css';
 function Technical() {
   return (
     <div className="Technical">

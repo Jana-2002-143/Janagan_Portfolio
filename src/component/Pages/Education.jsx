@@ -1,4 +1,4 @@
-import './component/CSS/Education.css';
+import '../CSS/Education.css';
 
 function Education() {
   const educationData = [

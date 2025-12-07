@@ -1,4 +1,4 @@
-import './component/CSS/Project.css';
+import '../CSS/Project.css';
 function Project() {
   const projectData = [
     {
