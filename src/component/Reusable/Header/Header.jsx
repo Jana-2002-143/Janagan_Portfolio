@@ -1,14 +1,36 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Header.css";
 
 function Header() {
   const [mode, setMode] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate=useNavigate();
 
   const changing = () => {
     setMode(!mode);
     document.body.classList.toggle("dark");
   };
+  const btnHome=(e)=>{
+    e.preventDefault();
+    navigate("/");
+  }
+  const btnSkills=(e)=>{
+    e.preventDefault();
+    navigate("/technical");
+  }
+  const btnProject=(e)=>{
+    e.preventDefault();
+    navigate("/project");
+  }
+  const btnEducation=(e)=>{
+    e.preventDefault();
+    navigate("/education");
+  }
+  const btnAbout=(e)=>{
+    e.preventDefault();
+    navigate("/aboutme");
+  }
 
   return (
     <>
@@ -21,11 +43,11 @@ function Header() {
           ☰
         </div>
         <nav className={`navlist ${openMenu ? "show" : ""}`}>
-          <p>Home</p>
-          <p>Skills</p>
-          <p>Project</p>
-          <p>Education</p>
-          <p>About</p>
+          <p onClick={btnHome}>Home</p>
+          <p onClick={btnSkills}>Skills</p>
+          <p onClick={btnProject}>Project</p>
+          <p onClick={btnEducation}>Education</p>
+          <p onClick={btnAbout}>About</p>
           <div className="toggle-box">
             <span className="mode-name">{mode ? "Dark" : "Light"}</span>
             <label className="switch">
