@@ -1,8 +1,7 @@
-import './Technical.css'
+import './component/CSS/Technical.css';
 function Technical() {
   return (
     <div className="Technical">
-      {/* Professional Summary */}
       <div className="psummary">
         <h2 className='psummarytitle'>Professional Summary</h2>
         <p className="professionalpara">
@@ -20,7 +19,6 @@ function Technical() {
 
       <div className="techtools">
 
-        {/* Frontend */}
         <div className="skillcard">
           <h3 className="toolname">Front End</h3>
           <p className="toolsummary">Core technologies and tools</p>
@@ -32,7 +30,6 @@ function Technical() {
           </div>
         </div>
 
-        {/* Backend */}
         <div className="skillcard">
           <h3 className="toolname">Backend</h3>
           <p className="toolsummary">Core technologies and tools</p>
@@ -44,7 +41,6 @@ function Technical() {
           </div>
         </div>
 
-        {/* Version Control */}
         <div className="skillcard">
           <h3 className="toolname">Version Control</h3>
           <p className="toolsummary">Core technologies and tools</p>
@@ -53,8 +49,7 @@ function Technical() {
             <span className="skillname">GitHub</span>
           </div>
         </div>
-
-        {/* Tools */}
+        
         <div className="skillcard">
           <h3 className="toolname">Tools</h3>
           <p className="toolsummary">Core technologies and tools</p>

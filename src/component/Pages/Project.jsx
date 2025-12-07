@@ -1,5 +1,4 @@
-import React from "react";
-import "./Project.css";
+import './component/CSS/Project.css';
 function Project() {
   const projectData = [
     {
