@@ -26,7 +26,7 @@ function Education() {
     {
       title: "SSLC",
       category: "Secondary School",
-      institute: "Laurel Hr. Sec School, Pudukkottai",
+      institute: "Government Hr. Sec School, Pudukkottai",
       duration: "Jun 2017 – Apr 2018",
       score: "Percentage: 87%",
     }
