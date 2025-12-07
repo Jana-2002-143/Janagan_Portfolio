@@ -22,7 +22,7 @@ function Heading() {
           <FaPhoneAlt className="iconsize" /> +91 9943653771{" "}
         </p>
         <a href="mailto:janaganjkl930@gmail.com" className="firstemail">
-          <MdEmail className="iconsize" /> janaganjkl930@gamil.com{" "}
+          <MdEmail className="iconsize" /> janaganjkl930@gmail.com{" "}
         </a>
       </div>
       <div className="mywebsites">
