@@ -2,6 +2,33 @@ import '../CSS/Project.css';
 function Project() {
   const projectData = [
     {
+      title: "Online Shopping",
+      subtitle: "Shop",
+      description:
+      "A fully functional online shopping web application featuring product browsing, category filtering, cart management, and a complete checkout flow. Users can add/remove items, view order summaries, and track their purchase history. Built with a responsive front-end and a robust backend including authentication, APIs, and database integration.",
+      
+      tools: [
+        "Java",
+        "Springboot",
+        "MySql",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+      ],
+      code: "https://github.com/Jana-2002-143/onlineshop",
+      demo: "https://limitedonlineshop.netlify.app/",
+      features: [
+        "Efficient state management for cart system",
+        "Error-free, optimized backend with structured REST APIs",
+        "Clean component-based UI with reusable layout",
+        "Backend built with REST API & database",
+        "Product listing, search, and category filters",
+        "Add to cart and remove from cart functionality",
+        "Fully responsive UI for mobile and desktop",
+      ],
+    },
+    {
       title: "Bus Reservation",
       subtitle: "BookBus",
       description:
@@ -17,7 +44,7 @@ function Project() {
         "React.js",
       ],
       code: "https://github.com/Jana-2002-143/BusReservation.git",
-      demo: "https://privatebusbooking.netlify.app",
+      demo: "https://limitedbusbooking.netlify.app",
       features: [
         "User-friendly interface for booking and viewing tickets",
         "Search buses by location, date, and route",
