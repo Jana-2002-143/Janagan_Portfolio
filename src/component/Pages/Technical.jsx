@@ -3,14 +3,6 @@ function Technical() {
   return (
     <div className="Technical">
       <div className="psummary">
-        <h2 className='psummarytitle'>Professional Summary</h2>
-        <p className="professionalpara">
-          Enthusiastic and committed Java Full Stack Developer with hands-on
-          experience in building static websites using HTML and CSS. Skilled in
-          Java programming and software development fundamentals. Strong
-          interest in web development and learning new technologies. Eager to
-          contribute to software teams with dedication and quick adaptability.
-        </p>
       </div>
       <h1 className="tech">Technical Skills</h1>
       <p className="techsummary">

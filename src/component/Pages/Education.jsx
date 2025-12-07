@@ -6,7 +6,7 @@ function Education() {
       title: "Java Full-Stack Developer",
       category: "Certification Course",
       institute: "Besant Technologies",
-      duration: "Jul 2025 – Present",
+      duration: "Jan 2025 – Present",
       score: "CGPA: 10",
     },
     {

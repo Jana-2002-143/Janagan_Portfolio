@@ -1,0 +1,187 @@
+/* GLOBAL VARIABLES */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body.dark {
+  --bg: #111111;
+  --text: #f1f1f1;
+}
+
+/* MAIN HEADER */
+.header-container {
+  width: 90%;
+  padding: 15px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  color: var(--text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: 0.3s;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* NAME + ROLE TEXT */
+.username h1 {
+  margin: 0;
+  font-size: clamp(10px, 2vw, 20px);
+  font-weight: 700;
+}
+
+.username p {
+  margin: 0;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+/* NAVIGATION */
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 3vw, 35px);
+}
+
+/* LINKS */
+.navlist p {
+  cursor: pointer;
+  color: orangered;
+  font-size: clamp(12px, 2vw, 17px);
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navlist p:hover {
+  color: #0099ff;
+  transform: scale(1.08);
+}
+
+/* TOGGLE CONTAINER */
+.toggle-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SWITCH BASE */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: clamp(40px, 4vw, 55px);
+  height: clamp(20px, 2vw, 28px);
+}
+
+/* Hide checkbox */
+.switch input {
+  display: none;
+}
+
+/* Background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aaa;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Toggle button */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 75%;
+  width: 45%;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When switch ON */
+input:checked + .slider {
+  background-color: #0099ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+}
+
+/* MOBILE MENU BUTTON */
+.menu-btn {
+  font-size: 32px;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE BREAKPOINTS */
+/* -------------------------------------- */
+
+/* TABLET */
+@media (max-width: 920px) {
+  .navlist p {
+    font-size: 14px;
+  }
+}
+
+/* MOBILE MODE */
+@media (max-width: 780px) {
+  /* Show Mobile Button */
+  .menu-btn {
+    display: block;
+  }
+
+  /* Hide nav by default */
+  .navlist {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 260px;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  /* Slide menu when show = true */
+  .navlist.show {
+    right: 5vw;
+  }
+
+  .navlist p {
+    font-size: 16px;
+  }
+
+  .toggle-box {
+    margin-top: 10px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 450px) {
+  .header-container {
+    padding: 10px 4vw;
+  }
+
+  .username h1 {
+    font-size: 18px;
+  }
+
+  .username p {
+    font-size: 12px;
+  }
+}

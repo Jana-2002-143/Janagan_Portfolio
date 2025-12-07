@@ -1,90 +1,116 @@
+/* ===========================
+   EDUCATION SECTION 
+=========================== */
 .Education {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 60px;
-  background: #f5f7fa;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  color: #1a1a1a;
+  padding: 50px 20px;
+  background: #ffffff;
+  transition: 0.3s;
 }
 
-/* Title section */
+body.dark .Education {
+  background: #0f0f0f;
+}
+
 .educationtitle {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .myeducation {
   font-size: 32px;
-  margin-bottom: 5px;
+  font-weight: 700;
+  color: #222;
+}
+
+body.dark .myeducation {
+  color: #fff;
 }
 
 .edusummary {
-  font-size: 16px;
-  color: #444;
+  font-size: 17px;
+  color: #666;
 }
 
-/* Grid layout for all education cards */
+body.dark .edusummary {
+  color: #d4d4d4;
+}
+
+/* Card container */
 .alleducation {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* Individual card */
+/* Each education card */
 .course {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #0078ff;
+  transition: 0.3s;
+}
+
+body.dark .course {
+  background: #1a1a1a;
+  border-left: 6px solid #0b6dff;
 }
 
 .course:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
 }
 
-/* Top section inside card */
-.design {
-  margin-bottom: 10px;
-}
-
+/* Title */
 .coursename {
-  margin: 0;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+body.dark .coursename {
+  color: #fff;
 }
 
 .coursecategory {
   font-size: 14px;
-  color: #3b3bff;
-  background: #eef2ff;
-  padding: 5px 12px;
-  border-radius: 12px;
-  display: inline-block;
-  margin-top: 6px;
+  color: #777;
 }
 
-/* Institute name */
+body.dark .coursecategory {
+  color: #cfcfcf;
+}
+
+/* Institute */
 .institute {
-  margin: 12px 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+body.dark .institute {
+  color: #d8d8d8;
+}
+
+/* Duration + Score */
+.yearofcourse {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
   color: #333;
 }
 
-/* Year + Percentage flex layout */
-.yearofcourse {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 12px;
+body.dark .yearofcourse {
+  color: #dedede;
 }
 
-.courseduration {
-  font-size: 14px;
-  color: #555;
-}
-
-.percentageofcourse {
-  font-size: 14px;
-  font-weight: 600;
-  color: #222;
+/* Responsive */
+@media (max-width: 600px) {
+  .coursename {
+    font-size: 18px;
+  }
+  .yearofcourse {
+    flex-direction: column;
+    gap: 5px;
+  }
 }

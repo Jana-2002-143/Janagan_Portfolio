@@ -19,12 +19,12 @@ function Heading() {
         turning ideas into complete, polished applications.
       </p>
       <div className="myaddress">
-        <p>
+        <a href="#">
           <FaLocationDot className="iconsize" /> Pudukkottai,Tamilnadu,India{" "}
-        </p>
-        <p>
+        </a>
+        <a href="#">
           <FaPhoneAlt className="iconsize" /> +91 9943653771{" "}
-        </p>
+        </a>
         <a href="mailto:janaganjkl930@gmail.com" className="firstemail">
           <MdEmail className="iconsize" /> janaganjkl930@gmail.com{" "}
         </a>
