@@ -14,22 +14,31 @@ function Header() {
   const btnHome=(e)=>{
     e.preventDefault();
     navigate("/");
+    setOpenMenu(false);
   }
   const btnSkills=(e)=>{
     e.preventDefault();
     navigate("/technical");
+    setOpenMenu(false);
+
   }
   const btnProject=(e)=>{
     e.preventDefault();
     navigate("/project");
+    setOpenMenu(false);
+
   }
   const btnEducation=(e)=>{
     e.preventDefault();
     navigate("/education");
+    setOpenMenu(false);
+
   }
   const btnAbout=(e)=>{
     e.preventDefault();
     navigate("/aboutme");
+    setOpenMenu(false);
+
   }
 
   return (
